@@ -2,7 +2,7 @@
 
 ## Aula 4
 
-Alguns dos conceitos criados na **Aula-4**
+Alguns dos conceitos estudados na **Aula-4**
 
 ```css
 elemento {
