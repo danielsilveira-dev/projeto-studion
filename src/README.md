@@ -2,6 +2,8 @@
 
 ## Aula 4
 
+Alguns dos conceitos criados na **Aula-4**
+
 ```css
 elemento {
   width: 100%; /* Esticar a imagem para ocupar todo o elemento onde está posicionada em largura */

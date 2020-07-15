@@ -126,4 +126,5 @@ ul {
   border-color: var(--color-primary);
   background-color: var(--color-primary);
   color: #fff;
+  outline: none;
 }
