@@ -18,7 +18,7 @@ elemento {
 
 Alguns conceitos estudados na **Aula-5**
 
-### Trabalhando com grids
+## Trabalhando com grids
 
 ```html
 <h3>
@@ -44,7 +44,7 @@ elemento {
 }
 ```
 
-### Overflow e Auto-fill
+## Overflow e Auto-fill
 
 Foi inserido a propriedade `overflow-x: hidden;` nos elementos `<header>`, `<main>`, `<footer>`:
 
@@ -66,5 +66,62 @@ Essa propriedade impede que qualquer coisa saia de dentro dos blocos selecionado
 
   margin: 0;
   padding: 4.375rem 1rem;
+}
+```
+
+## Estilizando a seção institutional
+
+Alteração nos elementos da `<section class="institutional">`:
+
+```html
+<section class="institutional">
+  <!-- Atribuído uma class no section institutional -->
+  <!-- Elemento img movido para fora da DIV tornando elemento irmão de DIV -->
+  <img
+    class="institutional__image"
+    src="./images/institutional.jpg"
+    alt="Studion Institutional"
+  />
+
+  <!-- Inserido a class "Institutional__copy" -->
+  <div class="institutional__copy">
+    <h6>Fazemos o seu evento acontecer</h6>
+    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, facere
+      dolores? Aspernatur laboriosam molestiae a nisi odio cumque accusamus
+      aliquid cupiditate rerum, officia quas aperiam nulla voluptates magni
+      minus labore?
+    </p>
+    <!-- Inserido uma classe para o elemento button "btn btn-institutional" -->
+    <button class="btn btn--institutional">Saiba Mais</button>
+  </div>
+</section>
+```
+
+E a estilização do html ficou assim:
+
+```css
+.institutional {
+  display: grid; /* Definir elemento como grid container */
+  grid-template-columns: auto auto; /* Duas colunas que se adaptam ao viewport automaticamente */
+  gap: 3.125rem; /* Cria um espaçamento entre colunas */
+  align-items: center; /* Alinhar div institutional ao centro verticalmente */
+  padding: 4.375rem 1rem; /* Padding para definirmos o espaçamento interno do container */
+}
+
+.institutional__copy {
+  padding: 0 1.875rem; /* Adição de espaçamento interno no bloco para os lados direito e esquerdo */
+}
+```
+## CSS - Fonte secundária e estilizando o botão
+
+```css
+elemento {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  /* 
+    repeat(auto-fill, minmax(valorpx, valor fr) é bom usar pra quando quiser uma grid responsiva.
+  */
 }
 ```
