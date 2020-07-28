@@ -125,3 +125,27 @@ elemento {
   */
 }
 ```
+## CSS - Estratégia de Container
+
+Como delimitar o conteúdo dentro de um espaço conforme imagem do projeto
+```css
+.container { /* Classe utilitária para centralizar todo o site ao centro */
+  max-width: 1140px; /* Significa que ele vai ter um tamanho máximo limitado. */
+  margin: 0 auto; /* Irá alinhar a navbar ao centro da página */
+}
+```
+## Medida ch
+Uma medida excelente para trabalhar o kerning com o `letter-spacing: 1ch ou 0.5ch;`
+### Ferramentas de Git
+  [Commitizen](https://github.com/commitizen/cz-cli) - Ferramenta para formatar o texto do **commit**  
+
+  Outra ferramenta para usar em conjunto
+
+  [Commit-lint](https://github.com/conventional-changelog/commitlint) - Analiza o texto do commit, verifica se tem erros, ortografia.
+
+  Também pode ser usado em conjunto com outra ferramenta  
+
+  [Husky](https://github.com/typicode/husky)
+
+### Cursos para aprender html e css gratuítos
+ - codeacademy
