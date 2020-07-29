@@ -204,3 +204,22 @@ ul {
   color: var(--color-copy);
   background: unset;
 }
+
+.quote {
+  background-image: url('./images/parallax.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.quote__container {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  min-height: 80vh;
+}
+
+.quote__copy {
+  background-color: #fff;
+}
