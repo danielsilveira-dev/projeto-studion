@@ -148,4 +148,30 @@ Uma medida excelente para trabalhar o kerning com o `letter-spacing: 1ch ou 0.5c
   [Husky](https://github.com/typicode/husky)
 
 ### Cursos para aprender html e css gratuítos
- - codeacademy
+ [codeacademy](https://www.codecademy.com/learn)
+
+## Aula 6
+
+### HTML - Revisando a estrutura do Quote
+
+Adição da classe "quote" para colocar o background aplicando o efeito de paralax  
+Adição da classe "container" para centralizar o conteúdo com a classe utilitária "container"  
+Adição da classe "quote__copy" para editar o texto.
+Adição da classe utilitária "copy--primary" na tag `<span>` para colorir o texto do span
+Adição da classe base para o botão "btn"
+Adição da classe modificadora do botão "btn--quote", classe específica para nossa seção "quote"
+```html
+<section class="quote">
+  <div class="container quote__container">
+    <div class="quote__copy">
+      <h6>
+        Você informa a temática e nós planejamos um evento com tecnologia e
+      </h6>
+      <h2><span class="copy--primary">Muito+ </span>Diversão</h2>
+      <button class="btn btn--quote">Fazer cotação</button>
+    </div>
+  </div>
+</section>
+```
+
+### CSS - Aplicando o efeito parallax
