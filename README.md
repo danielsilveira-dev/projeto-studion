@@ -180,8 +180,7 @@ Começando a editar a seção "quote"
 
 #### Efeito Paralax
 
-Adicionamos a propriedade `background-image: url('./images/parallax.jpg');` para adicionar o Fundo.      
-Adicionamos a propriedade `background-attachment: fixed;` que já traz um efeito paralax   
+Adicionamos a propriedade `background-image: url('./images/parallax.jpg');` para adicionar o Fundo.  
 Adicionamos a propriedade `background-attachment: fixed;` para fixar o background.  
 Adicionamos a propriedade `background-repeat: no-repeat;` para a imagem não se repetir.  
 Adicionamos a propriedade `background-size: cover;` para a imagem ocupar a área inteira da class "quote".  
@@ -278,5 +277,32 @@ Adicionamos a propriedade `display: block;`.
 ```css
 .quote__copy h2 span {
   display: block;
+}
+```
+### CSS - Estilizando o botão e Finalizando o Quote
+
+#### Estilizando a class "btn__quote"
+
+Adicionamos a propriedade `color: var(--color-copy);`.  
+Adicionamos a propriedade `border-color: var(--color-copy);`  
+Adicionamos a propriedade `background: unset;` que retira o fundo do elemento.  
+
+```css
+.btn--quote {
+  color: var(--color-copy);
+  border-color: var(--color-copy);
+  background: unset;
+}
+```
+
+#### Alteração da margem do h2
+
+```css
+.quote__copy h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  letter-spacing: -.1875rem;
+  margin: 1.875rem 0;
 }
 ```
