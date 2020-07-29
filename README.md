@@ -181,8 +181,7 @@ Começando a editar a seção "quote"
 #### Efeito Paralax
 
 Adicionamos a propriedade `background-image: url('./images/parallax.jpg');` para adicionar o Fundo.      
-Adicionamos a propriedade `background-attachment: fixed;` que já traz um efeito paralax  
-Adicionamos a propriedade `min-height: 80vh;` para mostrar 80% da altura que o usuário consegue ver na tela.  
+Adicionamos a propriedade `background-attachment: fixed;` que já traz um efeito paralax   
 Adicionamos a propriedade `background-attachment: fixed;` para fixar o background.  
 Adicionamos a propriedade `background-repeat: no-repeat;` para a imagem não se repetir.  
 Adicionamos a propriedade `background-size: cover;` para a imagem ocupar a área inteira da class "quote".  
@@ -191,10 +190,32 @@ Adicionamos a propriedade `background-position: center;` para alinhar a imagem d
 ```css
 .quote {
   background-image: url('./images/parallax.jpg');
-  min-height: 80vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+```
+### CSS - Containers e Grids
+
+Adicionamos uma cor de fundo a class "quote__copy".  
+Adicionamos a propriedade `display: grid;` na class "quote__container", para tornar o elemento grid.  
+Adicionamos a propriedade `align-items: center;` para alinhar o conteúdo da class "quote__container" centralizado verticalmente.  
+Adicionamos a propriedade `min-height: 80vh;` para mostrar 80% da altura que o usuário consegue ver na tela. 
+
+```css
+.quote {
+  display: grid;
+  align-items: center;
+  justify-items: end;
+  min-height: 80vh;
+}
+.quote__container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.quote__copy {
+  background-color: #fff;
 }
 ```
