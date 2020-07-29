@@ -219,3 +219,64 @@ Adicionamos a propriedade `min-height: 80vh;` para mostrar 80% da altura que o u
   background-color: #fff;
 }
 ```
+### CSS - Estilizando a caixa de texto
+
+#### Estilizando a class "quote__copy"
+
+Adicionamos a propriedade `padding: 5.625rem 4.375rem;` para adicionar espaçamento interno na caixa.  
+```css
+.quote__copy {
+  background-color: #fff;
+  padding: 5.625rem 4.375rem;
+}
+```
+
+#### Estilizando o elemento "h6" dentro da classe "quote__copy"
+
+Adicionamos a propriedade `font-weight: 400;` (Regular) ao nosso elemento h6.  
+Adicionamos a propriedade `font-size: .9375rem;`  
+Adicionamos a propriedade `letter-spacing: .1875rem;`  
+Adicionamos a propriedade `line-height: 1.4375rem;`  
+Adicionamos uma largura máxima limitado em carácteres com a propriedade definida em ch `max-width: 53ch;`    
+Adicionamos a propriedade `text-transform: uppercase;` para estilizar as letras em caixa alta.  
+Resetamos a margem com a propriedade `margin: 0;`.  
+
+**Obs: O tamanho de um parágrafo que seria bom para leitura é em torno de 70/120 ch**
+```css
+.quote__copy h6 {
+  font-size: .9375rem;
+  font-weight: 400;
+  letter-spacing: .1875rem;
+  line-height: 1.4375rem;
+  max-width: 53ch; /* Largura máxima limitado em caracteres */
+  text-transform: uppercase;
+  margin: 0;
+}
+```
+
+#### Estilizando o elemento h2
+
+Adicionamos a propriedade `font-size: 5rem;`.  
+Adicionamos a propriedade `line-height: 5rem;` para colocar um espaço entre as linhas.  
+Adicionamos a propriedade `text-transform: uppercase;`.  
+Adicionamos a propriedade `letter-spacing: -.1875rem;`.
+Adicionamos a propriedade `margin-top: 1.875rem;` para adicionar um espaço entre o h2 e h6.    
+```css
+.quote__copy h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  letter-spacing: -.1875rem;
+  margin-top: 1.875rem;
+
+}
+```
+
+#### Estilizando o elemento span
+
+Adicionamos a propriedade `display: block;`.  
+```css
+.quote__copy h2 span {
+  display: block;
+}
+```
