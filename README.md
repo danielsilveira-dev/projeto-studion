@@ -306,3 +306,36 @@ Adicionamos a propriedade `background: unset;` que retira o fundo do elemento.
   margin: 1.875rem 0;
 }
 ```
+# Aula 7 - Site de Eventos: Finalizando a Home com o Footer
+
+## CSS - [Font Awesome](https://fontawesome.com/)
+
+Adicionamos os imports no começo do **CSS**
+```css
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css');
+```
+
+Adicionamos os ícones de rede social no html da seguinte forma:  
+```html
+<ul>
+    <li>
+      <a href="https://www.facebook.com/" target="_blank">
+         <i class="fab fa-facebook fa-2x"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/" target="_blank">
+        <span class="fa-stack">
+          <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+          <i class="fab fa-twitter fa-stack-1x"></i>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/" target="_blank">
+          <i class="far fa-play-circle fa-2x"></i>
+      </a>
+    </li>
+  </ul>
+```
