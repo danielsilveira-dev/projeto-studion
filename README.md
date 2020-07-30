@@ -319,23 +319,138 @@ Adicionamos os imports no começo do **CSS**
 Adicionamos os ícones de rede social no html da seguinte forma:  
 ```html
 <ul>
-    <li>
-      <a href="https://www.facebook.com/" target="_blank">
-         <i class="fab fa-facebook fa-2x"></i>
-      </a>
-    </li>
-    <li>
-      <a href="https://twitter.com/" target="_blank">
-        <span class="fa-stack">
-          <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
-          <i class="fab fa-twitter fa-stack-1x"></i>
-        </span>
-      </a>
-    </li>
-    <li>
-      <a href="https://www.youtube.com/" target="_blank">
+  <li>
+    <a href="https://www.facebook.com/" target="_blank">
+      <i class="fab fa-facebook fa-2x"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/" target="_blank">
+      <span class="fa-stack">
+        <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fab fa-twitter fa-stack-1x"></i>
+      </span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/" target="_blank">
+        <i class="far fa-play-circle fa-2x"></i>
+    </a>
+  </li>
+</ul>
+```
+## HTML e CSS - Estrutura, container e grid
+
+#### Alterações no HTML:
+- Adicionamos uma classe no elemento `<footer>` com o nome "footer".
+- Adicionamos uma classe no elemento `<h2>` com o nome "logo-studion".
+- Adicionamos uma classe no primeiro elemento `<span>` com o nome "copy--primary".
+- Adicionamos uma classe no segundo elemento `<span>` com o nome "logo-studion__subtitle".
+- Organizamos o conteúdo da logo.
+- Adicionamos uma div com as classes: "container" e "footer__container"
+- Colocamos o conteúdo do elemento `<h2>` até a lista dentro da div com as duas classes
+```html
+<footer class="footer">
+  <div class="container footer__container">
+    <h2 class="logo-studion">
+      Studi<span>on</span>
+      <span class="logo-studion__subtitle">Eventos</span>
+    </h2>
+    <form class="footer__form" action="">
+      <label for="">receba news e promoções</label>
+      <input type="email" placeholder="email" />
+      <button type="submit">Enviar</button>
+    </form>
+    <ul class="footer__social">
+      <li>
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/" target="_blank">
+          <span class="fa-stack">
+            <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+            <i class="fab fa-twitter fa-stack-1x"></i>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/" target="_blank">
           <i class="far fa-play-circle fa-2x"></i>
-      </a>
-    </li>
-  </ul>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <hr />
+  <p>
+    <small>Studi<span>ON</span> - Todos os direitos reservados</small>
+  <p>
+</footer>
+```
+#### Footer - Formulário
+- Adicionamos uma classe no elemento `<form>` com o nome "footer__form".
+```html
+  <form class="footer__form" action="">
+  </form>
+```
+#### Footer - Lista
+- Adicionamos uma classe no elemento `<ul>` com o nome "footer__social".
+```html
+<ul class="footer__social">
+</ul>
+```
+## Estilizando a class ".footer"
+- Adicionamos uma cor de fundo preto `background-color: #000;`
+- Adicionamos uma cor para o texto `color: #fff;`
+- Adicionamos um padding nas laterais para criar um espaço interno no elemento.
+```css
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0 1rem;
+}
+```
+## Estilizando a class ".footer__container"
+- Adicionamos a propriedade `display: grid;` para tornar o elemento como grid.
+- Adicionamos a propriedade `grid-template-columns: repeat(3, auto);` para as colunas do nosso grid.
+- Adicionamos a propriedade `align-items: center;` para alinhar os elementos verticalmente.
+```css
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+}
+```
+## Estilizando a class ".logo-studion"
+- Adicionamos a propriedade `justify-self: start;` para alinhamento.
+```css
+.footer .logo-studion {
+  justify-self: start;
+}
+```
+
+## Estilizando a class ".logo-studion__subtitle"
+- Adicionamos a propriedade `display: block;` para quebrar a linha na logo studion do footer.
+```css
+.logo-studion__subtitle {
+  display: block;
+}
+```
+
+## Estilizando a class ".footer__form"
+- Adicionamos a propriedade `justify-self: center;` para alinhamento ao centro.
+```css
+.footer__form {
+  justify-self: center;
+}
+```
+
+## Estilizando a class ".footer__social"
+- Adicionamos a propriedade `justify-self: end;` para colocar no final.
+
+```css
+.footer__social {
+  justify-self: end;
+}
 ```
