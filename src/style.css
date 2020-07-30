@@ -254,7 +254,28 @@ ul {
   background: unset;
 }
 
-footer {
+.footer {
   background-color: #000;
   color: #fff;
+  padding: 0 1rem;
+}
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+}
+
+.footer .logo-studion {
+  justify-self: start;
+}
+.logo-studion__subtitle {
+  display: block;
+}
+
+.footer__form {
+  justify-self: center;
+}
+
+.footer__social {
+  justify-self: end;
 }
