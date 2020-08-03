@@ -454,3 +454,71 @@ Adicionamos os ícones de rede social no html da seguinte forma:
   justify-self: end;
 }
 ```
+## CSS - Margens e Formulário
+
+- Alteramos a classe ".logo__studion" para retirar a margem da logo.
+- Adicionamos um espaço interno na classe ".footer__container" para o conteúdo não ficar muito colado na borda do elemento footer.
+`grid-template-columns: 5.625rem auto;`
+```css
+.footer .logo-studion {
+  justify-self: start;
+  margin: 0;
+}
+.footer .footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  padding: 5.25rem 0;
+}
+```
+- Adicionamos as propriedades na classe ".footer__form" definindo a classe como grid
+- Adicionamos duas colunas na classe ".footer__form" com a propriedade 
+- `gap: 1.25rem;` para adicionar um espaço entre o elemento `<label></label>` e o elemento irmão, `<fieldset></fieldset>`.
+```css
+.footer__form {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 10ch auto;
+  gap: 1.25rem;
+}
+```
+Adicionamos algumas propriedades no elemento `<fieldset></fieldset>`:  
+- `border: unset;` para retirar os valores de borda.
+- `margin: 0;` para retirar os valores de margem.
+- `padding: 0;` para retirar os valores de padding do elemento.
+- `width: 100%;` para o nosso `<fieldset></fieldset>` ocupar todo espaço disponível da coluna
+
+```css
+.footer__form fieldset {
+  border: unset;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+```
+- Adicionamos o elemento html `<fieldset></fieldset>` para agrupar dois elementos dentro da tag ".footer__form" conforme abaixo.
+- Adicionamos uma "id" no elemento `<input id="email" />` para interligar com o elemento `<label for="email"></label>` onde adicionamos um atributo "for".
+
+```html
+<label for="email">receba news e promoções</label>
+<fieldset>
+  <input id="email" type="email" placeholder="email" />
+  <button type="submit">Enviar</button>
+</fieldset>
+```
+### .footer__form label
+
+```css
+.footer__form  label {
+  
+}
+```
+
+### .footer__form input
+- `width: 100%;` para nosso input ocupar a largura total do espaço disponível  da coluna.
+
+```css
+.footer__form input {
+  width: 100%;
+}
+```
