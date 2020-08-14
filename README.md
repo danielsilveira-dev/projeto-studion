@@ -1,5 +1,6 @@
 # Projeto Studion do curso da Imagine School
 
+![Projeto Studion](/src/images/img-project-studion.png)
 
 #### Efeito Paralax com CSS
 
